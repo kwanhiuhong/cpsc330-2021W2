@@ -1,0 +1,22 @@
+1. If we let the decision tree grow without limit, we does NOT always end up with pure leaf nodes! (Imagine two features have the exactly same value, then how to separate them?)
+
+2. A threshold to split the dataset is NOT a hyperparameter
+
+3.
+If both train and validation errors are high (say 0.2), this is underfitting (a.k.a your model is way too simple, e.g. a tree stump - decision tree with depth = 1)
+
+If train error is low (e.g. 0) and validation error is high, this is overfitting (a.k.a over trained with the training data and its error)
+
+4.Fundamental tradeoff of supervised learning:
+As you increase the model complexity, E_train tends to go down but E_valid - E_train tends to go up (The gap goes up but not exactly E_valid goes up!!!!).
+
+Also bias vs variance tradeoff (only either one will be high)
+Bias (high=underfitting):
+the tendency to learn the same wrong thing or failing to learn something important
+Variance (high=overfitting):
+the tendency to learn random things irrespective of the real sign
+
+5.General workflow for machine learning:
+1.Splitting: split the data X and y into X_train, X_test, y_train, y_test or train_df and test_df using train_test_split in sckitlearn.
+2.Select the best model using cross-validation: User cross_validate with return_train_score = True so that we can get access to training scores in each fold.
+3.Score on test data: Finally score on the test data with the chosen hyper-parameters to examine the generalisation performance.

@@ -1,0 +1,36 @@
+5.1
+1. knn will generally suffer from problem like: the eculidean distance might be completely dominated by the features with super large values. Features on a smaller scale will be ignored and can be highly informative, there is no reason to ignore them.
+
+However also, this is not a problem for decision tree, because we are asking one question for a single feature but we are not considering all features at the same time.
+
+5.2
+That's why we need to scale/transform the data
+1. StandardScaler() (a.k.a "standardisation") in scikit-learn: sets sample mean to 0, s.d. to 1. e.g. X -= np.mean(X, axis=0), X /= np.std(X, axis=0)
+2. MinMaxScaler() (a.k.a "normalisation") in scikit-learn, sets range to [0,1], e.g. X -= np.min(X, axis=0), X /= np.max(X, axis=0)
+
+
+2. To be safe and to avoid accidentally breaking the golden rules (do not use test data to train), it's better to do things/add features after splitting
+
+
+Imputation (Add missing values): it could be mean/median, depending on the strategy you select. E.g. "SimpleImputer" in scikit-learn
+
+Both imputer and scaler are also known as "transformers"
+
+5.3
+using fit_transform with cross_validate will cause some data from validation set to leak into the training step. (Because we fit the transformer with the entire training set, The problem is that the validation set was used to fit the transformer - so we violated the rule that the test set (validation set) should not influence the training in anyway.)
+https://piazza.com/class/ky0j51i4ud64t5?cid=109
+
+5.4 - One-hot encoding
+To transform categorical features to numeric ones so that we can use them in the model, we either:
+	1. Ordinal encoding (sometimes recommended when you wanna capture the ordinality)
+	2. One-hot encoding (recommended in most situations): If we have c categories in a single column, we then create c new binary columns to represent those categories.
+
+Before we fit our regressor, we wanna apply different transformation on different columns.
+	~ Numeric columns: imputation and scaling
+	~ Categorical columns: imputation and one-hot encoding
+
+
+
+
+
+

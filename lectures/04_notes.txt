@@ -1,0 +1,7 @@
+training errors does not matter we look at the mean_cross_validation_error more (given two same cross_validation_errors, we pick the model that is simpler / less depth in the case of a decision tree)
+
+k-nn selects no feature at all, it's gonna use up all features to calculate the euclidean tree (The decision tree on the other hand may be working at some small sets of a feature) (E.g. a tree stump (with depth = 1) has one split and 1 good feature)
+
+do you need to store at least O(n) worth of stuff to make predictions? If so, it’s non-parametric.
+parametric: stump tree
+non-parametric: knn

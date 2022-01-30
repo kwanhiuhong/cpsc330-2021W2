@@ -1,0 +1,13 @@
+6.1
+ColumnTransformer
+
+6.2 - Encoding Text Features
+~ What if the features are in the form of raw text? (E.g. "I am happy")
+
+1. Bags of words representation: 
+	~ most popular
+	~ ignores the syntax and word order
+	~ two components:
+		a. the vocabulary (all unique words in all documents, a document is a *row* data, or a feature containing text in the row)
+		b. a value indicating either the presence or absence or the count of each word in the document
+	~ you can use "CountVectorizer().fit_transform()" to do the work, but each time you can only convert one single feature at once. (You gotta input a pandas.series or array into the function)
