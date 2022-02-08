@@ -1,14 +1,30 @@
 # UBC CPSC 330: Applied Machine Learning (2021W2)
 
-## Watch out for 👀 (last updated: 02/02/22)
+## Watch out for 👀 (last updated: 07/02/22)
 
 Keep an eye on this paragraph at the top of the readme file, I will try to keep it up to date with urgent to-dos and important things. 
 
-Please watch the following videos before next class on Thursday: [8.1](https://youtu.be/lMWdHZSZMk8),[8.2](https://youtu.be/Z9a9XZ0vQv0).
+Please watch the following videos before next class on Tuesday: [9.2](https://youtu.be/ZCuCErW5lI8),[9.3](https://youtu.be/XkCTUuoH23c),[9.4](https://youtu.be/jHaKRCFb6Qw).
 
-HW3 is out and due next Wednesday, February 2nd at 11:59 PM. Please review the important update regarding this homework on [Piazza](https://piazza.com/class/ky0j51i4ud64t5?cid=110). **You are no longer allowed to submit in pairs for this homework.**
+HW4 is out and due on Friday, February 11th at 11:59 PM. You are again allowed to submit in pairs.
 
-HW2 grades and solution are available. You have 1 week (until next Saturday) to submit regrading requests.
+HW3 grades will be available shortly.
+
+In preparation for the midterm exam, the lecture before (February 15) will be used to review a few topics of your choice. Please use [this poll](https://piazza.com/class/ky0j51i4ud64t5?cid=134) to let me know your preferences. **Read the post before voting** and keep in mind that unfortunately it will be impossible to accommodate all requests, so if you feel very uncertain about a topic, don't wait and pay us a visit during office hours.
+
+By majority vote, tutorials will continue to be online for the remainder of the semester. So will office hours. 
+
+## Midterm information
+
+As per calendar, the midterm will be on **February 17, in DMP 310 during class time (expected start at 12:35, end at 1:50, for a total of 75 minutes). No remote options allowed.** 
+
+The exam will be closed-book and it will be administered through Canvas. 
+
+You are required to bring your own computer or tablet to complete the exam. If you do not think you will have one available on the day of the exam, let your instructor know through Piazza **by February 9**. If you come to the exam without a computer, or if your computer malfunctions during the exam, you will be offered a paper version of the test.
+
+You are also required to bring your UBC student card or another piece or photo ID for identification. **If we are unable to verify your identity because you do not have a valid ID, your exam will be invalidated and you will be assigned a grade of 0.**
+
+Students who require special accommodations must register with CFA and take the exam at their facilities. Remember that **CFA requires you to do so at least 1 week prior to the exam**, so do this ASAP. If you fail to register with CFA and can not take the exam with them, we will not be able to provide alternative accommodations and you will have to take the exam with the rest of the class.
 
 
 ## Introduction
