@@ -1,0 +1,36 @@
+Accuracy is misleading when we have class imbalance (one class happens much more frequent than other classes)
+
+9.2 - Confusion Matrix
+A common way to look at the errors made by your machine learning algorithm, gives us information about
+1.false positive
+2.false negative
+3.true positive
+4.true negative
+
+9.3 - Precision, Recall, F1 score
+
+1.Precision: Among the positive examples you identified, how many were actually positive? precision = TP / (TP + FP)
+
+2.Recall: Among all positive examples, how many did you identify?, which is equal to TP / (TP + FN) = TP / #positives
+
+3.F1 score: F1-score combines precision and recall to give one score, which could be used in hyperparam optimization.
+f1 = 2 * (precision * recall) / (precision + recall)
+
+**note that what you considered "positive" is important to the scores above
+
+9.4 - Addressing Class Imbalance
+E.g. the credit card fraud dataset is highly imbalanced (with many examples of non-fraudulent transactions than fraudulent transactions)
+We want to spot all the fraudulent transactions so minimising false negatives is absolutely important. Then types of errors play a very important role.
+
+Two scenarios to consider:
+1.If it is really that one class is much more than the others, then it's ok to just ignore the class imbalance issues
+
+2.It it is because of data collection methods, that means your test and training data come from different distributions! Then that's is a big problem because your training data cannot represent the population
+
+Solutions:
+	1. change the threshold (so that your metrics changed, say by lowering the threshold to increase your recall)
+	2. change the data (undersampling/oversampling data) - Not in syllabus 
+	3. change the training procedure - "class_weight: dict or 'balanced'", which allows us to specify which class is more important to use.
+
+
+

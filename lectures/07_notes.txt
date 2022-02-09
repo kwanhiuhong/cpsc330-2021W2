@@ -1,0 +1,16 @@
+around 28:30
+when we hit the error "ValueError: Found unknown categories ['xxxx'] in column x during transform" while using cross_validate. It usually means that some columns containing categorical value but that category only appears in the validation fold instead of the train fold. So we train the model with train fold but having no knowledge about the category in the validation fold, that's why errors happened.
+
+2 solutions:
+1.
+pass "handle_unknown="ignore"" argument to OneHotEncoder
+It creates a row with all zeros
+
+2.
+Cases where it’s OK to break the golden rule¶
+
+If it’s some fix number of categories. For example, if it’s something like provinces in Canada or majors taught at UBC. We know the categories in advance and this is one of the cases where it might be OK to violate the golden rule and get a list of all possible values for the categorical variable.
+
+When we apply OneHotEncoder on binary column (we can add "drop="if_binary") to make sure only one column is here. (But not two columns where are wasteful)
+
+~ The output of logistics regression is probabilityk9999

@@ -17,7 +17,18 @@ Imputation (Add missing values): it could be mean/median, depending on the strat
 Both imputer and scaler are also known as "transformers"
 
 5.3
-using fit_transform with cross_validate will cause some data from validation set to leak into the training step. (Because we fit the transformer with the entire training set, The problem is that the validation set was used to fit the transformer - so we violated the rule that the test set (validation set) should not influence the training in anyway.)
+using fit_transform with cross_validate will cause some data from validation set to leak into the training step. 
+
+Suppose we use cv = 5
+80% = training set, 20% = validation set. 
+But in the slide, we use 100% (entire training set) to fit the transformer (a.k.a get the mean of the entire training set).
+
+However, doing this, validation set was used to fit the transformer as well - so we violated the rule that the test set (validation set) should not influence the training in anyway.) (The data leakage here is the "mean" we get from fit() for transformer contains the data from validation set.
+
+Instead a better approach is, 
+80% = training set, 20% = validation set
+we fit the transformer using the 80%, and transform 80% and train it with 80%. Then we transform the 20% (don't fit here because fit will alter the mean in our transformer from the mean of 80% to the mean of 20%), the use 20% to predict the score. 
+
 https://piazza.com/class/ky0j51i4ud64t5?cid=109
 
 5.4 - One-hot encoding

@@ -1,0 +1,10 @@
+7.1 Linear Regression
+We use Ridge instead of LinearRegression() in scikit learn because we could adjust the alpga - hyperparameter in Ridge()
+
+7.2 Logistics Regression
+The decision boundary of logistics regression is a hyperplane dividing the feature space in half.
+
+If you have d features, then your decision boundary will be d-1 dimensional hyperplane
+
+7.3 Predicting Probability Scores
+probabilities will be higher if the point is far away from the decision boundary in the case of logistics regression.

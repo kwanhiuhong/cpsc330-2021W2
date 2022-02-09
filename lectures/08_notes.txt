@@ -1,0 +1,17 @@
+8.1 Hyperparameter Optimization Motivation
+
+Two ways of tuneing hyperparam:
+1. Intuition/expert knowledge, e.g if I know I am now overfitting, I reduce the hyperparam (say the depth of decision tree)
+
+2.Automated hyperparam optimization
+Basically exhaustively trying different possible combinations of the hyperparameter and then calculate the mean score of cross_validate
+
+8.2 Overfitting of the validation set/optimisation bias
+~ While carrying out hyperparameter optimization, we usually try over many possibilities (say grid search cv). If our dataset is small and if your validation set is hit too many times, we suffer from optimization bias or overfitting of the validation set.
+
+You try many hyperparameters, say the depth of decision tree, say there is one out of 1000 trees happen to have low validation error just by chance. But when you use that hyperparam value to the test set, you find that it's not generalising well. Then the training error is not representative of the test error, that's overfitting of the validation error.
+
+What do you do if your test score is much lower than the cross-validation score?
+1. try simpler models and use the test set a couple of times (it's ok to use it multiple times in this scenario), it's not the end of the world
+2. communication this clearly when you report the results
+
