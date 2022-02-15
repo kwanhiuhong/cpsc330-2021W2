@@ -35,12 +35,21 @@ R^2 can be NEGATIVE!!! That means your model is predicting really badly
 The first step in training a machine learning model is to first train the dummy classifier/regressor/baseline model so that you can compare the score later with your actual trained model!
 
 2.3 Decision Trees (Classification)
+!!!We can also use decision tree for regression problems.
+https://ubc-cs.github.io/cpsc330/lectures/02_decision-trees.html#decision-tree-for-regression-problems
 
 2.4 More terminology
 ~ All leaf nodes in decision trees are pure (Only one class of sample in the leaf nodes) The decision tree expansion is done until all leaf nodes are pure and only contain pure leaf nodes
+
 ~ Decision stump: A decision tree with only one stump (5:30). Not necessarily all leaf nodes are pure in this case.
 
 Parameters: Things that you learn during trainings
+	The decision tree algorithm primarily learns two things:
+		1.the best feature to split on
+		2.the threshold for the feature to split on at each node
+	These are called parameters of the decision tree model. When predicting on new examples, we need parameters of the model.
+
+
 Hyper-parameters: Things that you set to control the training
 
 Decision Boundary: 

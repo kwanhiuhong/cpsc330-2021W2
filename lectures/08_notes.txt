@@ -15,3 +15,4 @@ What do you do if your test score is much lower than the cross-validation score?
 1. try simpler models and use the test set a couple of times (it's ok to use it multiple times in this scenario), it's not the end of the world
 2. communication this clearly when you report the results
 
+The __ syntax is important for specifying which params you are referring to in a pipeline (refer to https://ubc-cs.github.io/cpsc330/lectures/08_hyperparameter-optimization.html#the-syntax)
