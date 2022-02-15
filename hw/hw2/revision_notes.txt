@@ -1,0 +1,1 @@
+Q1.d the bin size in the histogram is important (it affects the shape)
