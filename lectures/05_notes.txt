@@ -40,7 +40,7 @@ Before we fit our regressor, we wanna apply different transformation on differen
 	~ Numeric columns: imputation and scaling
 	~ Categorical columns: imputation and one-hot encoding
 
-
+To transform different types of data at the same time, you can use make_column_transformer but not make_pipeline (the latter only works when all values are numeric)
 
 
 

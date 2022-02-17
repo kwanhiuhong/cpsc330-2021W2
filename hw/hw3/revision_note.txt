@@ -1,0 +1,8 @@
+In Q3.1
+~ OneHotEncoder(handle_unknown="ignore", sparse=False)
+Can use this param to handle_unknown categories where some categories only appear in the test set and that transform is not able to learn.
+https://ubc-cs.github.io/cpsc330/lectures/06_column-transformer-text-feats.html#dealing-with-unknown-categories
+
+This is also the Cases where it’s OK to break the golden rule
+
+If it’s some fix number of categories. For example, if it’s something like provinces in Canada or majors taught at UBC. We know the categories in advance and this is one of the cases where it might be OK to violate the golden rule and get a list of all possible values for the categorical variable.

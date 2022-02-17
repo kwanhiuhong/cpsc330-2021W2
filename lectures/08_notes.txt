@@ -16,3 +16,15 @@ What do you do if your test score is much lower than the cross-validation score?
 2. communication this clearly when you report the results
 
 The __ syntax is important for specifying which params you are referring to in a pipeline (refer to https://ubc-cs.github.io/cpsc330/lectures/08_hyperparameter-optimization.html#the-syntax)
+
+Advantages of RandomizedSearchCV¶
+~ Faster compared to GridSearchCV.
+~ Adding parameters that do not influence the performance does not affect efficiency.
+~ Works better when some parameters are more important than others.
+
+Overfitting of the validation error¶
+
+Why do we need to evaluate the model on the test set in the end?
+Why not just use cross-validation on the whole dataset?
+While carrying out hyperparameter optimization, we usually try over many possibilities.
+If our dataset is small and if your validation set is hit too many times, we suffer from optimization bias or overfitting the validation set.

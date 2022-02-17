@@ -1,3 +1,14 @@
+~ Ridge is similar to linear regression but with a hyperparameter called alpha. When alpha = 0, they are the same.
+larger alpha → likely to underfit
+smaller alpha → likely to overfit
+Possible alpha range: [0.001, 0.01, 0.1, 0, 10 100]
+
+Logistic Regression has similar hyperparams with SVC
+smaller C → might lead to underfitting
+bigger C → might lead to overfitting 
+Possible C range: [0.001, 0.01, 0.1, 0, 10 100]
+
+
 around 28:30
 when we hit the error "ValueError: Found unknown categories ['xxxx'] in column x during transform" while using cross_validate. It usually means that some columns containing categorical value but that category only appears in the validation fold instead of the train fold. So we train the model with train fold but having no knowledge about the category in the validation fold, that's why errors happened.
 
@@ -13,4 +24,4 @@ If it’s some fix number of categories. For example, if it’s something like p
 
 When we apply OneHotEncoder on binary column (we can add "drop="if_binary") to make sure only one column is here. (But not two columns where are wasteful)
 
-~ The output of logistics regression is probabilityk9999
+~ The output of logistics regression is probability    k9999
