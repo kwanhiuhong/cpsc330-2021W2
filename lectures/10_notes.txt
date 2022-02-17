@@ -32,7 +32,7 @@ sqrt(MSE)
 
 3. R-square
 
-4. MATE
+4. MAPE: percent_errors = (pred_train - y_train) / y_train * 100.0
 
 
 

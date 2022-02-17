@@ -32,5 +32,16 @@ Solutions:
 	2. change the data (undersampling/oversampling data) - Not in syllabus 
 	3. change the training procedure - "class_weight: dict or 'balanced'", which allows us to specify which class is more important to use.
 
+AP vs. F1-score¶
 
+It is very important to note this distinction:
+
+F1 score is for a given threshold and measures the quality of predict.
+AP score is a summary across thresholds and measures the quality of predict_proba.
+
+AUC (Area under the curve - Receiver Operating Characteristic (ROC) curve which is FPR-x vs TPR-y)
+AUC of 0.5 means random chance.
+AUC can be interpreted as evaluating the ranking of positive examples.
+What’s the probability that a randomly picked positive point has a higher score according to the classifier than a randomly picked point from the negative class.
+AUC of 1.0 means all positive points have a higher score than all negative points.
 
