@@ -32,6 +32,12 @@ Solutions:
 	2. change the data (undersampling/oversampling data) - Not in syllabus 
 	3. change the training procedure - "class_weight: dict or 'balanced'", which allows us to specify which class is more important to use.
 
+•	One way to do this is by computing the area under the PR curve.
+•	This is called average precision (AP score)
+•	AP score has a value between 0 (worst) and 1 (best).
+
+AP  vs. F1-score¶
+
 AP vs. F1-score¶
 
 It is very important to note this distinction:
