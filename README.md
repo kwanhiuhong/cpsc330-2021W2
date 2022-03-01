@@ -1,12 +1,15 @@
 # UBC CPSC 330: Applied Machine Learning (2021W2)
 
-## Watch out for 👀 (last updated: 24/02/22)
+## Watch out for 👀 (last updated: 28/02/22)
 
 Keep an eye on this paragraph at the top of the readme file, I will try to keep it up to date with urgent to-dos and important things. 
 
-HW5 is out and due on Monday, February 28th at 11:59 PM. Paired submissions are allowed. Although you have a longer period of time for this homework, start soon because it is probably the longest so far. You also want to be comfortable with the content of lectures 9 and 10 for the midterm, so you can use this homework as a way to practice.
+Before our next lecture (3/1) please watch: [11.1](https://youtu.be/8litm1H7DLo),[11.2](https://youtu.be/EkFkY9QB2Hw)
 
-HW4 grades are available on Gradescope. Regrade requests are open until March 3rd (please keep following the policy - HW3 was much more manageable than the first 2).
+Midterm exam grades have been posted on Canvas. The mean for the test is 76%, well done! If you have questions about the exam, office hours on Wednesday or tutorials would be the best time to ask. If you need to report an error with your grade, please do so through Piazza using the tag "grading concerns". Please limit this to significant concerns (e.g. a question was skipped), and not 1-2 points differences on open eneded questions (which will not be addressed). 
+
+HW6 is out and due on Monday, March 14th at 11:59 PM (updated deadline). Paired submissions are allowed. Although you have a longer period of time for this homework, start soon because it is a summative homework and the longest so far. 
+
 
 
 ## Midterm information
@@ -55,9 +58,9 @@ Usually the homework assignments will be due on Mondays and will be released on 
 | hw4 | Feb 11, 11:59pm  |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
 | hw5 | Feb 28, 11:59pm |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
 | **Midterm** | Feb 17, during class time| TBD | TBD | 
-| hw6 | Mar 7, 11:59pm |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
-| hw7 | Mar 14, 11:59pm  |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
-| hw8 | Mar 21, 11:59pm |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
+| hw6 | Mar 14, 11:59pm |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
+| hw7 | Mar 21, 11:59pm  |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
+| hw8 | Mar 28, 11:59pm |   [Github repo](https://github.com/UBC-CS/cpsc330-2021W2/tree/main/hw) | [Gradescope](https://www.gradescope.ca/courses/5991)|  
 | **Final exam** | TBD | TBD | TBD |
 
 
@@ -97,8 +100,8 @@ Lectures will be on Tuesday and Thursday from 12:30pm to 2:00pm.
 | Feb 17 | **Midterm**  | | 
 | Feb 20-26 | **Reading week (no classes)**  | | 
 |        |     |**Week 7 datasets**: <li>[Adult Census Income](https://www.kaggle.com/uciml/adult-census-income#)</li> <li>[Credit Card Dataset for Clustering](https://www.kaggle.com/arjunbhasin2013/ccdata)</li>  | |
-| Mar 2 | [Ensembles](lecture/11_ensembles.ipynb) |  📹 <li>Pre-watch: [11.1](https://youtu.be/8litm1H7DLo),[11.2](https://youtu.be/EkFkY9QB2Hw)</li> | similar |
-| Mar 4 | [feature importances, model interpretation](lectures/12_feat-importances.ipynb) | 📹 <li>Pre-watch: [12.1](https://youtu.be/xfICsGL7DXE),[12.2](https://youtu.be/tiSN18OmZOo)</li> | feature importances is new, feature engineering is new |
+| Mar 1 | [Ensembles](lecture/11_ensembles.ipynb) |  📹 <li>Pre-watch: [11.1](https://youtu.be/8litm1H7DLo),[11.2](https://youtu.be/EkFkY9QB2Hw)</li> | similar |
+| Mar 2 | [feature importances, model interpretation](lectures/12_feat-importances.ipynb) | 📹 <li>Pre-watch: [12.1](https://youtu.be/xfICsGL7DXE),[12.2](https://youtu.be/tiSN18OmZOo)</li> | feature importances is new, feature engineering is new |
 | Mar 8 |   [Feature engineering and feature selection](lectures/13_feature-engineering-selection.ipynb) | None | less depth |
 |  | **Part II: Unsupervised learning, transfer learning, different learning settings**  | | 
 | Mar 10 |   [Clustering](lectures/14_k-means-clustering.ipynb) |  📹 <li>Pre-watch: [14.1](https://youtu.be/caAuUAXwpb8),[14.2](https://youtu.be/s6AvSZ1_l7I),[14.3](https://youtu.be/M5ilrhcL0oY)</li>  | less depth |
