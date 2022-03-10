@@ -1,0 +1,7 @@
+13. feature selection
+logistics regression is easy to interpret, svm is not but can still benefit from feature selections (SelectFromModel)
+
+RFE (Recursive feature elimination)
+~ reduce one feature at each iteration
+~ computationally expensive (slow)
+
