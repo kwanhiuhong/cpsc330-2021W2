@@ -1,0 +1,24 @@
+14.1 Clustering motivation
+
+14.2 K-means clustering algorithm
+~ K-means always converges, but does not mean it finds the right clusters. You gotta tell the algorithm how many clusters (k) you want to have. It first initialises k centres and then find the cloeset points.
+
+14.3 choosing k (hyper param tuning)
+1. The Elbow method
+~ Looks at the squared sum of intra-cluster distances (a.k.a inertia)
+~ The inertia decreases as K increases but the problem is that we can't just look for a k that minimizes inertia
+(If each point is a cluster, the inertia is 0!!)
+
+~ We evaluate the tradeoff "small k" vs "small intra-cluster distances"
+Elbow method describes the tradeoff between them and plot a graph
+
+2. The sihouette method
+~ Not dependent on the notion of cluster centers
+~ calculated using the mean intra-cluster distance (a) and mean nearest-cluster distance (b) for each sample
+
+
+k-means steps:
+1.set random centroids
+2.assign samples to closest centroid
+3.update centroids
+4.repeat 2 points above until convergence

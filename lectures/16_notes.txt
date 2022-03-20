@@ -1,0 +1,16 @@
+16.1 What is NLP
+
+16.2 Text preprocessing
+~ work segmentation
+
+Types and tokens
+~ Type: an element in the vocabulary
+~ Token: an instance of that type in running text
+
+Lemmatization: want to ignore some morphological differences between works. E.g if your search term is "studying for ML quiz" you might want to include pages containing "tips to study for an ML quiz" or "here is how I studies for my ML quiz".
+
+It converts inflected forms into the base form.
+
+Stemming: has a similar purpose (reduce words by chopping them)
+Say "automates", "automatic" could be reduced to "automat" which might not be an english word
+
