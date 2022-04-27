@@ -1,6 +1,6 @@
 8.1 Hyperparameter Optimization Motivation
 
-Two ways of tuneing hyperparam:
+Two ways of tuning hyperparam:
 1. Intuition/expert knowledge, e.g if I know I am now overfitting, I reduce the hyperparam (say the depth of decision tree)
 
 2.Automated hyperparam optimization
@@ -28,3 +28,12 @@ Why do we need to evaluate the model on the test set in the end?
 Why not just use cross-validation on the whole dataset?
 While carrying out hyperparameter optimization, we usually try over many possibilities.
 If our dataset is small and if your validation set is hit too many times, we suffer from optimization bias or overfitting the validation set.
+
+
+
+*** Midterm question 11 explanation
+The yellow on the left shows how your scores are going to change when you vary the unimportant hyperparameter.
+The green on the top shows how your scores are going to change when you vary the important hyperparameter.
+You don’t know in advance which hyperparameters are important for your problem.
+In the left figure, 6 of the 9 searches are useless because they are only varying the unimportant parameter.
+In the right figure, all 9 searches are useful.

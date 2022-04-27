@@ -41,7 +41,7 @@ https://ubc-cs.github.io/cpsc330/lectures/02_decision-trees.html#decision-tree-f
 2.4 More terminology
 ~ All leaf nodes in decision trees are pure (Only one class of sample in the leaf nodes) The decision tree expansion is done until all leaf nodes are pure and only contain pure leaf nodes
 
-~ Decision stump: A decision tree with only one stump (5:30). Not necessarily all leaf nodes are pure in this case.
+~ Decision stump: A decision tree with only one split / depth == 1 (5:30). Not necessarily all leaf nodes are pure in this case.
 
 Parameters: Things that you learn during trainings
 	The decision tree algorithm primarily learns two things:
@@ -49,6 +49,9 @@ Parameters: Things that you learn during trainings
 		2.the threshold for the feature to split on at each node
 	These are called parameters of the decision tree model. When predicting on new examples, we need parameters of the model.
 
+For the decision tree algorithm to work, the feature values must be numeric. - False
+For the decision tree algorithm to work, the target values must be numeric. - False
+The decision tree algorithm creates balanced decision trees. - False
 
 Hyper-parameters: Things that you set to control the training
 

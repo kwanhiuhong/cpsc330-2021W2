@@ -11,12 +11,21 @@ If train error is low (e.g. 0) and validation error is high, this is overfitting
 As you increase the model complexity, E_train tends to go down but E_valid - E_train tends to go up (The gap goes up but not exactly E_valid goes up!!!!).
 
 Also bias vs variance tradeoff (only either one will be high)
-Bias (high=underfitting):
+** Bias (high=underfitting):
 the tendency to learn the same wrong thing or failing to learn something important
-Variance (high=overfitting):
+** Variance (high=overfitting):
 the tendency to learn random things irrespective of the real sign
 
 5.General workflow for machine learning:
 1.Splitting: split the data X and y into X_train, X_test, y_train, y_test or train_df and test_df using train_test_split in sckitlearn.
 2.Select the best model using cross-validation: User cross_validate with return_train_score = True so that we can get access to training scores in each fold.
 3.Score on test data: Finally score on the test data with the chosen hyper-parameters to examine the generalisation performance.
+
+To approximate generalisation error, we do train-test split
+
+1. False - A decision tree model with no depth is likely to perform very well on the deployment data.
+2. False (Data splitting helps us assess how well our model would generalize.) - Data splitting helps us generalize our model better.
+3. False (You cannot score on the deployment data as there are no labels available.) - Deployment data is used at the very end and only scored once.
+4. True - Validation data could be used for hyperparameter optimization.
+5. False (We use it to assess model performance.) - We use cross-validation to improve model performance.
+

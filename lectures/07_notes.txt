@@ -1,6 +1,6 @@
-~ Ridge is similar to linear regression but with a hyperparameter called alpha. When alpha = 0, they are the same.
-larger alpha → likely to underfit
-smaller alpha → likely to overfit
+~ Ridge is similar to linear regression but with a hyperparameter called alpha. ** When alpha = 0, they are the same. **
+larger alpha → likely to underfit (less complex)
+smaller alpha → likely to overfit (more complex)
 Possible alpha range: [0.001, 0.01, 0.1, 0, 10 100]
 
 Logistic Regression has similar hyperparams with SVC
@@ -25,3 +25,9 @@ If it’s some fix number of categories. For example, if it’s something like p
 When we apply OneHotEncoder on binary column (we can add "drop="if_binary") to make sure only one column is here. (But not two columns where are wasteful)
 
 ~ The output of logistics regression is probability    k9999
+
+
+About logistics regression class labelling - positive vs negative
+"lr.classes_"
+"array(['Canada', 'USA'], dtype=object)"
+This means "Canada" = negative, "USA" = positive class
